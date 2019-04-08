@@ -2,7 +2,7 @@ import React from "react";
 import Card from "./Card";
 export default function ListContainer(props) {
   const cards = props.cards.map(card => {
-    return <Card />;
+    return <Card title={card.title} description={card.description} />;
   });
   return (
     <section className="ListContainer">
@@ -11,3 +11,9 @@ export default function ListContainer(props) {
     </section>
   );
 }
+
+//react events
+// onClick
+// onMouseenter
+//onMouseOut
+// onScroll

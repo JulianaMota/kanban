@@ -15,17 +15,39 @@ export default class App extends React.Component {
         title: "Hi dad", //or whatever
         status: "Doing", //or Doing or Done,
         description: "bla, bla again"
+      },
+      {
+        id: 7684326, //Something random
+        title: "Hi ju", //or whatever
+        status: "Done", //or Doing or Done,
+        description: "bla, bla again"
+      },
+      {
+        id: 7684326, //Something random
+        title: "Hi ju", //or whatever
+        status: "Done", //or Doing or Done,
+        description: "bla, bla again"
+      },
+      {
+        id: 7684326, //Something random
+        title: "Hi ju", //or whatever
+        status: "Todo", //or Doing or Done,
+        description: "bla, bla again"
       }
     ]
+  };
+  addCard = e => {
+    console.log("addcard");
+    this.setState({});
   };
   render() {
     return (
       <section className="App">
         <h1>App</h1>
+        <button onClick={this.addCard}>Add a Card</button>
         <Nav />
         <Main cards={this.state.cards} />
       </section>
     );
   }
-}
 }
